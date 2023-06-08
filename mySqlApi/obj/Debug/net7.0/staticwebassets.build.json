@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Hqpd8y65FB/+CMQuwCNvfy9AUSB+EZTUsSuE+bSueAg=",
+  "Source": "mySqlApi",
+  "BasePath": "_content/mySqlApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
