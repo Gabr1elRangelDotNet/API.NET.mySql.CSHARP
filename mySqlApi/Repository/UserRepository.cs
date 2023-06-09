@@ -40,4 +40,14 @@ public class UserRepository : IUserRepository{
             return connection.Execute(sql, user);
         }
     }
+    
+    public int DeleteUser(int i_cliente_cliente)
+    {
+        var sql = "DELETE FROM cliente where i_cliente_cliente = @i_cliente_cliente";
+
+        using (MySqlConnection connection = new MySqlConnection(_connectionString))
+        {
+            return connection.Execute(sql, new { i_cliente_cliente });
+        }
+    }
 }
