@@ -36,4 +36,12 @@ public class UserController : ControllerBase
         return Ok(response);
     }
     
+    [HttpDelete()]
+    public IActionResult Delete(int i_cliente_cliente)
+    {
+        var response = _userRepository.DeleteUser(i_cliente_cliente);
+    
+        return Ok(response);
+    }
+    
 }
