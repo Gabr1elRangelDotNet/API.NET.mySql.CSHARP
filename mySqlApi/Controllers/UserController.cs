@@ -44,4 +44,13 @@ public class UserController : ControllerBase
         return Ok(response);
     }
     
+    [HttpGet("{i_cliente_cliente}")]
+
+    public IActionResult GetName(int i_cliente_cliente)
+    {
+        var response = _userRepository. GetName(i_cliente_cliente);
+    
+        return Ok(response);
+    }
+    
 }
