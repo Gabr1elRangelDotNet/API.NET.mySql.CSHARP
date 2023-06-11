@@ -50,4 +50,14 @@ public class UserRepository : IUserRepository{
             return connection.Execute(sql, new { i_cliente_cliente });
         }
     }
+    
+    public User GetName(int i_cliente_cliente)
+    {
+        var sql = $"SELECT s_nome_cliente from cliente where i_cliente_cliente= {i_cliente_cliente}";
+        using (MySqlConnection connection = new MySqlConnection(_connectionString))
+        {
+            var user = connection.QuerySingleOrDefault<User>(sql);
+            return user;
+        }
+    }
 }
